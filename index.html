@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit Card - UniCity</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="box1">
+          <div class="selected">
+            <span class="titles">ARTICULOS SELECCIONADOS</span>
+            <span class="titles">PRECIO</span>
+          </div>
+          <div class="items">
+            <div class="item">
+              <div class="item-count">
+                <div class="item-img">
+                  <img src="src/book.jpg" alt="" />
+                </div>
+                <div class="item-name">
+                  <span class="item-name-text"
+                    >El aciago demiurgo - Emil Cioran</span
+                  >
+                  <div class="count">
+                    <span class="titles">-</span>
+                    <span class="number">2</span>
+                    <span class="titles">+</span>
+                  </div>
+                </div>
+              </div>
+              <span class="price">$120</span>
+            </div>
+            <div class="item">
+              <div class="item-count">
+                <div class="item-img">
+                  <img src="src/book.jpg" alt="" />
+                </div>
+                <div class="item-name">
+                  <span class="item-name-text"
+                    >En las cimas de la desesperacion - Emil Cioran</span
+                  >
+                  <div class="count">
+                    <span class="titles">-</span>
+                    <span class="number">1</span>
+                    <span class="titles">+</span>
+                  </div>
+                </div>
+              </div>
+              <span class="price">$120</span>
+            </div>
+          </div>
+          <div class="total">
+            <div class="total-container">
+              <span class="titles">TOTAL</span>
+              <span class="total-price">$1200</span>
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <span class="titles payMethod">METODOS DE PAGO</span>
+          <div class="card">
+            <div class="img-text">
+              <img src="src/mastercard.svg" alt="" class="card-img" />
+              <span class="card-text">Mastercard</span>
+            </div>
+            <span class="titles">CAMBIAR</span>
+          </div>
+          <div class="credit-info">
+            <div class="credit-number">
+              <span class="titles">NUMBERO DE TARJETA</span>
+              <input
+                id="ccn"
+                type="tel"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number"
+                maxlength="19"
+                placeholder="xxxx xxxx xxxx xxxx"
+              />
+            </div>
+            <div class="credit-name">
+              <span class="titles">NOMBRE</span>
+              <input type="text" placeholder="Nombre que aparece en tarjeta" />
+            </div>
+            <div class="moreInfo">
+              <div class="credit-expDate">
+                <span class="titles">FECHA DE EXPIRACION</span>
+                <input type="text" placeholder="MM/YY" />
+              </div>
+              <div class="credit-cvv">
+                <span class="titles">CVV</span>
+                <input type="password" name="" id="" placeholder="***" />
+              </div>
+            </div>
+          </div>
+          <button class="btn">Proceder a la compra</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
+  </body>
+</html>

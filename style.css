@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oswald:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+
+.titles {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: #a4a4a4;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(162, 77%, 40%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}
+
+.container {
+  display: flex;
+  width: 70vw;
+  padding: 20px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.box1 {
+  width: 100%;
+  height: 100%;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #a4a4a4 1px solid;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.item-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  border: 1px #fff solid;
+  margin-right: 5px;
+}
+
+.item-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.item-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.count > span {
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.price,
+.total-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payMethod {
+  display: flex;
+  border-bottom: #000 1px solid;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #000 1px solid;
+  width: 100%;
+}
+
+.card-img {
+  width: 50px;
+}
+
+.img-text {
+  display: flex;
+  align-items: center;
+}
+
+.credit-info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.credit-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreInfo {
+  display: flex;
+  border-bottom: #000 1px solid;
+  width: 100%;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  padding: 5px 0;
+}
+
+.credit-expDate,
+.credit-cvv {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #57cc99;
+  color: #57cc99;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:after {
+  height: 100%;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #57cc99;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .box2 {
+    margin: 0;
+  }
+}
